@@ -42,8 +42,10 @@ def cake_calculator(flour: int, sugar: int) -> list:
 
 
 # --- Main execution block. DO NOT MODIFY  ---
+
 if __name__ == "__main__":
    try:
+       
        # 1. Read input from stdin
        flour_str = input().strip()
        sugar_str = input().strip()
