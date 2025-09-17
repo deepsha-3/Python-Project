@@ -17,7 +17,7 @@ def cake_calculator(flour: int, sugar: int) -> list:
    Raises:
        ValueError: If inputs flour or sugar are not positive.
    """
-   
+
    # Step 1: Validate inputs
    if flour <= 0 or sugar <= 0:
        raise ValueError("Flour and sugar must be positive integers.")
@@ -67,6 +67,7 @@ if __name__ == "__main__":
        print("Error: Not enough input lines provided.", file=sys.stderr)
        sys.exit(1)
    except Exception as e:
+       
        # Catch any other unexpected errors
        print(f"An unexpected error occurred: {e}", file=sys.stderr)
        sys.exit(1)
