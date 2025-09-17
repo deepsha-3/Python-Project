@@ -17,6 +17,7 @@ def cake_calculator(flour: int, sugar: int) -> list:
    Raises:
        ValueError: If inputs flour or sugar are not positive.
    """
+   
    # Step 1: Validate inputs
    if flour <= 0 or sugar <= 0:
        raise ValueError("Flour and sugar must be positive integers.")
