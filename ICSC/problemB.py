@@ -59,6 +59,7 @@ if __name__ == "__main__":
        print(f"{result[0]} {result[1]} {result[2]}")
        
    except ValueError as e:
+       
        # Handle errors during input conversion or validation
        print(f"Input Error or Validation Failed: {e}", file=sys.stderr)
        sys.exit(1)
