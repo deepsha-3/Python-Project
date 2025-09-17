@@ -15,7 +15,7 @@ you= input("Enter your choice:")
 you_lower = you.lower()  
 youDict={"r": 1, "s":-1, "p":0}
 
-reverseDict={1:"Rock", -1:"Scissors",0:"Paper"}
+reverseDict={1:"Rock", -1: "Scissors", 0:"Paper"}
   
 yournum= youDict.get(you_lower)
 
