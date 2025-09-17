@@ -2,7 +2,7 @@ import turtle
 import time
 from pygame import mixer
 
-# # 🎵 Music Setup (Optional)
+#  🎵 Music Setup (Optional)
 # try:
 #     mixer.init()
 #     mixer.music.load(r"C:\Users\Deepsha\Music\The Weeknd,Playboi Carti-Timeless(320 Kbps).mp3")
