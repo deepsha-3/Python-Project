@@ -42,7 +42,7 @@ def place_word(grid: List[List[str]], word: str, row: int, col: int, drow: int, 
         grid[r][c] = letter
 
 def create_crossword(words: list) -> list:
-    
+
     """
     Generate a 10x10 word search puzzle containing the given words.
     
@@ -52,6 +52,7 @@ def create_crossword(words: list) -> list:
     Returns:
         A 2D array (list of lists) representing the word search puzzle.
     """
+    
     # Step 1: Start with a 10x10 empty grid
     grid = [['.' for _ in range(10)] for _ in range(10)]
     
