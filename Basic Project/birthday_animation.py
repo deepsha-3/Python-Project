@@ -1,15 +1,18 @@
 import turtle
 import time
 import random
-from pygame import mixer
+from playsound import playsound
+import threading
 
-# 🎵 Music Setup
-try:
-    mixer.init()
-    mixer.music.load(r"C:\Users\dell\Downloads\Happy Birthday to you song.mp4")  # Replace with your actual file path
-    mixer.music.play(-1)  # Loop indefinitely
-except Exception as e:
-    print("Music error:", e)
+# 🎵 Play music in background using threading
+def play_music():
+    try:
+        playsound(r"C:\Users\Deepsha\Music\YourBirthdaySong.mp3")  # Replace with your actual file path
+    except Exception as e:
+        print("Music error:", e)
+
+# Start music in a separate thread so it doesn't block animation
+threading.Thread(target=play_music, daemon=True).start()
 
 # 🎨 Screen Setup
 screen = turtle.Screen()
@@ -108,9 +111,6 @@ for bounce in range(6):
     message.goto(-120, 100 + bounce * 10)
     message.write("Happy Birthday Deepsha!", align="left", font=("Arial", 22, "bold"))
     time.sleep(0.4)
-
-# 🛑 Stop Music (Optional)
-# mixer.music.stop()
 
 # 🧵 Finish
 turtle.done()
