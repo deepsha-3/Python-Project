@@ -52,7 +52,7 @@ def create_crossword(words: list) -> list:
     Returns:
         A 2D array (list of lists) representing the word search puzzle.
     """
-    
+
     # Step 1: Start with a 10x10 empty grid
     grid = [['.' for _ in range(10)] for _ in range(10)]
     
@@ -100,6 +100,7 @@ def create_crossword(words: list) -> list:
 
 
 # --- Main execution block. DO NOT MODIFY.  ---
+
 if __name__ == "__main__":
     try:
         # Read words from first line (comma-separated)
