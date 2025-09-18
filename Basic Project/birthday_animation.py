@@ -109,7 +109,7 @@ time.sleep(1)
 for bounce in range(6):
     message.clear()
     message.goto(-120, 100 + bounce * 10)
-    message.write("Happy Birthday Deepsha!", align="left", font=("Arial", 22, "bold"))
+    message.write("Happy Birthday Dilip Dumre!", align="left", font=("Arial", 22, "bold"))
     time.sleep(0.4)
 
 # 🧵 Finish
