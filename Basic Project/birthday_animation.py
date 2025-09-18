@@ -19,7 +19,7 @@ screen = turtle.Screen()
 screen.bgcolor("black")
 screen.title("Happy Birthday Animation")
 
-# Draw Cake Layers
+# Draw cake layers
 def draw_cake_layer(t, width, height, y_pos, color):
     t.penup()
     t.goto(-width // 2, y_pos)
@@ -40,12 +40,12 @@ cake = turtle.Turtle()
 cake.hideturtle()
 cake.speed(0)
 
-# Draw 3 colorful layers
+# Draw 3 colorful layers of cake
 draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer
 draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")  # Middle layer
 draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer
 
-# 🕯️ Draw Large Candles
+# Makes candles
 candle = turtle.Turtle()
 candle.hideturtle()
 candle.speed(0)
