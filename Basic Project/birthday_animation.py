@@ -14,12 +14,12 @@ def play_music():
 # Start music in a separate thread so it doesn't block animation
 threading.Thread(target=play_music, daemon=True).start()
 
-# 🎨 Screen Setup
+# Screen Setup
 screen = turtle.Screen()
 screen.bgcolor("black")
 screen.title("Happy Birthday Animation")
 
-# 🍰 Draw Cake Layers
+# Draw Cake Layers
 def draw_cake_layer(t, width, height, y_pos, color):
     t.penup()
     t.goto(-width // 2, y_pos)
