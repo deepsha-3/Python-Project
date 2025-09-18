@@ -4,6 +4,7 @@ from typing import List
 
 # All 8 possible directions a word can go:
 # right, left, down, up, and the 4 diagonals
+
 DIRECTIONS = [
     (0, 1),   # →
     (0, -1),  # ←
