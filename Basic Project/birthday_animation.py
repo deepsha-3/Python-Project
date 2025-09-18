@@ -95,7 +95,7 @@ for x in candle_positions:
     flame.circle(7)
     flame.end_fill()
 
-# 🎉 Birthday Message
+# Birthday message
 message = turtle.Turtle()
 message.hideturtle()
 message.speed(0)
