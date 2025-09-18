@@ -34,6 +34,7 @@ def word_fits(grid: List[List[str]], word: str, row: int, col: int, drow: int, d
     return True
 
 def place_word(grid: List[List[str]], word: str, row: int, col: int, drow: int, dcol: int):
+
     """Place the word into the grid at (row, col) going in (drow, dcol) direction."""
     for i, letter in enumerate(word):
         r, c = row + i * drow, col + i * dcol
