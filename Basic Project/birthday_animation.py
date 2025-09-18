@@ -66,7 +66,7 @@ for x in candle_positions:
         candle.left(90)
     candle.end_fill()
 
-# 🔥 Flickering Flames
+# Makes flames
 flame = turtle.Turtle()
 flame.hideturtle()
 flame.speed(0)
@@ -85,7 +85,7 @@ for _ in range(10):
     time.sleep(0.2)
     flame.clear()
 
-# 💨 Blow Out Candles
+# Blow out candles
 time.sleep(1)
 for x in candle_positions:
     flame.penup()
