@@ -40,8 +40,8 @@ cake = turtle.Turtle()
 cake.hideturtle()
 cake.speed(0)
 
-# Draw 3 colorful layers of cake
-draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer
+# Draw 3 colorful layers 
+draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer of cake 
 draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")  # Middle layer
 draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer
 
