@@ -43,7 +43,7 @@ cake.speed(0)
 # Draw 3 colorful layers 
 draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer of cake 
 draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")  # Middle layer of cake
-draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer
+draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer of cake
 
 # Makes candles
 candle = turtle.Turtle()
