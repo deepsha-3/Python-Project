@@ -155,7 +155,7 @@ class AuthenticationManager:
 
             # Remove any existing tokens for this email
             cursor.execute('DELETE FROM password_resets WHERE email = ?', (email,))
-            
+
             # Insert new token
             cursor.execute(
                 'INSERT INTO password_resets (email, token) VALUES (?, ?)',
@@ -170,6 +170,7 @@ class AuthenticationManager:
         return True, "Password reset initiated"
     
     def reset_password(self, email, token, new_password):
+        
         # Validate token
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
