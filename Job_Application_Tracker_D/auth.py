@@ -152,9 +152,10 @@ class AuthenticationManager:
         
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
-            
+
             # Remove any existing tokens for this email
             cursor.execute('DELETE FROM password_resets WHERE email = ?', (email,))
+            
             # Insert new token
             cursor.execute(
                 'INSERT INTO password_resets (email, token) VALUES (?, ?)',
