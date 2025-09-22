@@ -172,7 +172,7 @@ class AuthenticationManager:
     def reset_password(self, email, token, new_password):
 
         # Validate token
-        
+
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute(
@@ -202,6 +202,7 @@ class AuthenticationManager:
         return True, "Password reset successful"
     
     def change_password(self, email, current_password, new_password):
+        
         # Verify current password
         success, message = self.verify_user(email, current_password)
         if not success:
