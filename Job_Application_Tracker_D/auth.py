@@ -80,6 +80,7 @@ class AuthenticationManager:
         return True, "User registered successfully"
     
     def verify_user(self, email, password):
+        
         # Get user data from database
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
