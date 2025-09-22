@@ -273,12 +273,12 @@ class AnimatedAuthWindow:
         self.show_login_form()
     
     def create_panels(self):
-        
+
         # Login form - initially visible
         self.login_frame = tk.Frame(self.main_container, bg="white", relief=tk.FLAT, bd=0)
         self.login_frame.place(relx=0, rely=0, relwidth=0.5, relheight=1)
         
-        # Welcome panel - initially on the right side
+        # Welcome panel: initially on the right side
         self.welcome_frame = tk.Frame(self.main_container, bg="#3498db", relief=tk.FLAT, bd=0)
         self.welcome_frame.place(relx=0.5, rely=0, relwidth=0.5, relheight=1)
         
