@@ -48,6 +48,7 @@ class AuthenticationManager:
         return password_hash, salt
     
     def register_user(self, username, email, password):
+
         # Check if username already exists
         if self.user_exists(username):
             return False, "Username already exists"
