@@ -202,7 +202,7 @@ class AuthenticationManager:
         return True, "Password reset successful"
     
     def change_password(self, email, current_password, new_password):
-        
+
         # Verify current password
         success, message = self.verify_user(email, current_password)
         if not success:
@@ -273,6 +273,7 @@ class AnimatedAuthWindow:
         self.show_login_form()
     
     def create_panels(self):
+        
         # Login form - initially visible
         self.login_frame = tk.Frame(self.main_container, bg="white", relief=tk.FLAT, bd=0)
         self.login_frame.place(relx=0, rely=0, relwidth=0.5, relheight=1)
