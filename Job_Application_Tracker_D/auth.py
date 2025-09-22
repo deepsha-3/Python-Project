@@ -289,6 +289,7 @@ class AnimatedAuthWindow:
         self.create_welcome_panel()
     
     def create_login_form(self):
+        
         # Title
         title_label = tk.Label(self.login_frame, text="Welcome Back!", font=("Arial", 24, "bold"), 
                               bg="white", fg="#2c3e50")
