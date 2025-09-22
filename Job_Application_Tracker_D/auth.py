@@ -170,8 +170,9 @@ class AuthenticationManager:
         return True, "Password reset initiated"
     
     def reset_password(self, email, token, new_password):
-        
+
         # Validate token
+        
         with sqlite3.connect(self.db_name) as conn:
             cursor = conn.cursor()
             cursor.execute(
