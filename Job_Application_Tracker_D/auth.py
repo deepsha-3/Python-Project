@@ -388,7 +388,7 @@ class AnimatedAuthWindow:
         self.root.title("Job Application Tracker - Sign Up")
     
     def create_register_form_content(self):
-        
+
         # Title
         title_label = tk.Label(self.register_frame, text="Create Account", font=("Arial", 24, "bold"), 
                               bg="white", fg="#2c3e50")
@@ -482,6 +482,7 @@ class AnimatedAuthWindow:
         move()
     
     def animate_background(self):
+        
         # Create a smooth color changing background
         self.current_hue = (self.current_hue + 0.5) % 360
         r, g, b = self.hsv_to_rgb(self.current_hue, 0.3, 0.2)
