@@ -482,7 +482,7 @@ class AnimatedAuthWindow:
         move()
     
     def animate_background(self):
-        
+
         # Create a smooth color changing background
         self.current_hue = (self.current_hue + 0.5) % 360
         r, g, b = self.hsv_to_rgb(self.current_hue, 0.3, 0.2)
@@ -495,6 +495,7 @@ class AnimatedAuthWindow:
         self.root.after(50, self.animate_background)
     
     def hsv_to_rgb(self, h, s, v):
+        
         # Convert HSV to RGB color
         h = h / 360.0
         if s == 0.0:
