@@ -495,7 +495,7 @@ class AnimatedAuthWindow:
         self.root.after(50, self.animate_background)
     
     def hsv_to_rgb(self, h, s, v):
-        
+
         # Convert HSV to RGB color
         h = h / 360.0
         if s == 0.0:
@@ -640,3 +640,7 @@ class AnimatedAuthWindow:
                 messagebox.showerror("Error", message)
         
         tk.Button(dialog, text="Reset Password", command=reset_password).pack(pady=20)
+
+
+
+       
