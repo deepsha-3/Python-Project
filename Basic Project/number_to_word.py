@@ -21,7 +21,7 @@ formats_lable = Label(root, text="Formats supported : ",
                fg="green", font=("Arial", 10, 'bold')).place(x=100, y=70)
 pos_format_lable = Label(root, text="1. Positives : ",
                fg="green", font=("Arial", 10, 'bold')).place(x=200, y=90)
-neg_format_lable = Label(root, text="2. Negatives :",
+neg_format_lable = Label(root, text="2. Negatives : ",
                fg="green", font=("Arial", 10, 'bold')).place(x=200, y=110)
 float_format_lable = Label(root, text="3. Zeros : ",
                fg="green", font=("Arial", 10, 'bold')).place(x=200, y=130)
