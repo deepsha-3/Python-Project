@@ -17,7 +17,7 @@ title = Label(root, text="Number to Words converter",
                fg="Blue", font=("Arial", 20, 'bold')).place(x=220, y=10)
 
 # Options
-formats_lable = Label(root, text="Formats supported :  ",
+formats_lable = Label(root, text="Formats supported : ",
                fg="green", font=("Arial", 10, 'bold')).place(x=100, y=70)
 pos_format_lable = Label(root, text="1. Positives :  ",
                fg="green", font=("Arial", 10, 'bold')).place(x=200, y=90)
