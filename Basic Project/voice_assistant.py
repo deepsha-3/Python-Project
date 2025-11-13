@@ -41,7 +41,7 @@ if __name__ == '__main__':
     while True:
         query = take_command().lower()
         if 'wikipedia' in query:
-            speak("Searching Wikipedia ...")
+            speak("Searching Wikipedia ....")
             query = query.replace("wikipedia", '')
             results = wikipedia.summary(query, sentences = 2)
             speak("According to wikipedia")
