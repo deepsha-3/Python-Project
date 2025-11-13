@@ -47,7 +47,7 @@ if __name__ == '__main__':
             speak("According to wikipedia")
             speak(results)
         elif 'are you' in query:
-            speak("I am amigo developed by Dipisha Dumre.")
+            speak("I am echo developed by Dipisha Dumre.")
         elif 'open youtube' in query:
             speak("opening youtube")
             webbrowser.open("youtube.com")
