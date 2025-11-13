@@ -5,7 +5,7 @@ import wikipedia
 import webbrowser
 import os
 
-# init pyttsx
+# init pyttsx 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
 
@@ -36,7 +36,7 @@ def take_command():
 
 if __name__ == '__main__':
 
-    speak("Amigo assistance activated ")
+    speak("Echo assistance activated ")
     speak("How can i help you")
     while True:
         query = take_command().lower()
