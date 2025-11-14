@@ -1,5 +1,5 @@
 import calendar
-yy = 2056  
+yy = 2056  # year
 mm = 5    # month
 
 
