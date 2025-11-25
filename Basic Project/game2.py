@@ -13,4 +13,4 @@ while (a != number):
     guess_value += 1
 
     if (a> number):
-        
+        print("Please, give a smaller number.")
