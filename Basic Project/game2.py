@@ -4,12 +4,11 @@
 import random
 
 number = random.randint(1, 100)
-
+print ("You play the number guessing game.")
 a = -1
 guess_value = 0
 
 while (a != number):
-    print ("You can guess the number between 1 to 100.")
     a = int(input("Guess the correct number between 1 to 100: "))
     guess_value += 1
 
