@@ -17,4 +17,5 @@ while (a != number):
 
     else:
         print("Please, give a larger number.")
-        
+
+print(f"Congratulations! You guessed the correct number {number} in {guess_value} attempts.")    
