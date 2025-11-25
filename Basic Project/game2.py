@@ -14,3 +14,7 @@ while (a != number):
 
     if (a> number):
         print("Please, give a smaller number.")
+
+    else:
+        print("Please, give a larger number.")
+        
