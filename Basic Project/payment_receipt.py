@@ -7,7 +7,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 DATA = [
     ["16/11/2020", "Full Stack Development", "1 year", "10,000/-"],
     ["16/11/2020", "Coding Classes", "6 months", "5,000/-"],
-    ["Sub Total", "Basic Computer Classes", " 3 months", "3000/-"],
+    ["Subject 1", "Basic Computer Classes", " 3 months", "3000/-"],
     ["Subject 2 ", "Graphics Desigin Classes ", "4 months", "5000/-"],
     ["Total", "", "", "178.00/-"],
 ]
