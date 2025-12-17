@@ -1,5 +1,5 @@
 
-# Python program to display the 
+# Python program to display the calender 
 
 import calendar
 yy = 2026  # year
