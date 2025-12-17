@@ -7,7 +7,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 DATA = [
     ["16/11/2020", "Full Stack Development", "1 year", "10,000/-"],
     ["16/11/2020", "Coding Classes", "6 months", "5,000/-"],
-    ["Sub Total", "", "", "3000/-"],
+    ["Sub Total", "Basic Computer Classes", " 3 months", "3000/-"],
     ["Discount", "", "", "-30.00/-"],
     ["Total", "", "", "178.00/-"],
 ]
@@ -20,7 +20,7 @@ styles = getSampleStyleSheet()
 title_style = styles["Heading1"]
 title_style.alignment = 1  # Center alignment
 
-title = Paragraph("Code_With_Dee", title_style)
+title = Paragraph("Tech_With_Dee", title_style)
 
 # Table style
 style = TableStyle([
