@@ -9,7 +9,7 @@ DATA = [
     ["16/11/2020", "Coding Classes", "6 months", "5,000/-"],
     ["Subject 1", "Basic Computer Classes", " 3 months", "3000/-"],
     ["Subject 2 ", "Graphics Desigin Classes ", "4 months", "5000/-"],
-    ["Total", "", "", "178.00/-"],
+  
 ]
 
 # Create PDF document
