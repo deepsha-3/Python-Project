@@ -9,7 +9,7 @@ DATA = [
     ["05/01/2026", "Full Stack Development", "1 year", "10,000/-"],
     ["16/11/2025", "Coding Classes", "6 months", "5,000/-"],
     ["12/12/2025", "Basic Computer Classes", " 3 months", "3000/-"],
-   
+    ["12/02/2026", "Graphics Desigin Classes", "4 months", "5000/-"],
   
 ]
 
