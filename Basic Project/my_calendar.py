@@ -1,5 +1,5 @@
 
-# Python program  
+# Python program to display the 
 
 import calendar
 yy = 2026  # year
