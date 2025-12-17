@@ -5,9 +5,9 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 # Receipt data
 DATA = [
-    ["16/11/2020", "Full Stack Development - Live", "Lifetime", "10,999.00/-"],
-    ["16/11/2020", "Coding Classes: Live Session", "6 months", "9,999.00/-"],
-    ["Sub Total", "", "", "208.00/-"],
+    ["16/11/2020", "Full Stack Development", "1 year", "10,000/-"],
+    ["16/11/2020", "Coding Classes", "6 months", "5,000/-"],
+    ["Sub Total", "", "", "3000/-"],
     ["Discount", "", "", "-30.00/-"],
     ["Total", "", "", "178.00/-"],
 ]
