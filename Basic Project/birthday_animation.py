@@ -4,7 +4,7 @@ import threading
 import time
 from playsound import playsound
 
-# 🎵 Play music in background using threading
+# Play music in background 
 def play_music():
     try:
         playsound(r"C:\Users\Deepsha\Music\YourBirthdaySong.mp3")  
