@@ -124,7 +124,7 @@ message.color("yellow")
 message.write("Happy Birthday Deepsha!", align="left", font=("Arial", 22, "bold"))
 screen.update()
 
-# Bounce Animation
+# Bounce 
 for bounce in range(6):
     message.clear()
     message.goto(-120, 100 + bounce * 10)
