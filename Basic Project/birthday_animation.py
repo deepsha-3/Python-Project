@@ -90,7 +90,7 @@ for _ in range(10):
 
 # Blow out flames with fade effect
 def blow_out_flames():
-    for size in range(7, 0, -1):  # Shrink flame gradually
+    for size in range(7, 0, -1): 
         flame.clear()
         for x in candle_positions:
             flame.penup()
