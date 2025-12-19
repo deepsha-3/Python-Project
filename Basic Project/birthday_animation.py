@@ -1,6 +1,7 @@
 import turtle
 import random
 import threading
+import time
 from playsound import playsound
 
 # 🎵 Play music in background using threading
@@ -10,14 +11,14 @@ def play_music():
     except Exception as e:
         print("Music error:", e)
 
-# Start music in a separate thread so it doesn't block animation
+# Start music in a separate thread
 threading.Thread(target=play_music, daemon=True).start()
 
 # Screen Setup
 screen = turtle.Screen()
 screen.bgcolor("black")
 screen.title("Happy Birthday Animation")
-screen.tracer(0)  # Turn off auto updates for smoother animation
+screen.tracer(0)  # Turn off auto updates for smoother control
 
 # Draw cake layers
 def draw_cake_layer(t, width, height, y_pos, color):
@@ -40,12 +41,12 @@ cake = turtle.Turtle()
 cake.hideturtle()
 cake.speed(0)
 
-# Draw 3 colorful layers 
-draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer
-draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")  # Middle layer
-draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer
+# Draw 3 colorful layers
+draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")
+draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")
+draw_cake_layer(cake, 140, 40, -50, "#f08080")
 
-# Makes candles
+# Candles
 candle = turtle.Turtle()
 candle.hideturtle()
 candle.speed(0)
@@ -66,7 +67,7 @@ for x in candle_positions:
         candle.left(90)
     candle.end_fill()
 
-# Makes flames
+# Flames
 flame = turtle.Turtle()
 flame.hideturtle()
 flame.speed(0)
@@ -82,21 +83,36 @@ def draw_flames():
         flame.end_fill()
     screen.update()
 
-# Animate flames flickering
+# Flickering flames
 for _ in range(10):
     draw_flames()
-    screen.ontimer(lambda: None, 200)  # Non-blocking delay
+    time.sleep(0.2)
 
-# Blow out candles
-flame.clear()
-for x in candle_positions:
-    flame.penup()
-    flame.goto(x + candle_width // 2, 35)
-    flame.color("black")
-    flame.begin_fill()
-    flame.circle(7)
-    flame.end_fill()
-screen.update()
+# Blow out flames with fade effect
+def blow_out_flames():
+    for size in range(7, 0, -1):  # Shrink flame gradually
+        flame.clear()
+        for x in candle_positions:
+            flame.penup()
+            flame.goto(x + candle_width // 2, 35)
+            flame.color("orange")
+            flame.begin_fill()
+            flame.circle(size)
+            flame.end_fill()
+        screen.update()
+        time.sleep(0.1)
+
+    # Optional smoke puff
+    for x in candle_positions:
+        flame.penup()
+        flame.goto(x + candle_width // 2, 35)
+        flame.color("gray")
+        flame.begin_fill()
+        flame.circle(5)
+        flame.end_fill()
+    screen.update()
+
+blow_out_flames()
 
 # Birthday message
 message = turtle.Turtle()
@@ -114,7 +130,7 @@ for bounce in range(6):
     message.goto(-120, 100 + bounce * 10)
     message.write("Happy Birthday Deepsha!", align="left", font=("Arial", 22, "bold"))
     screen.update()
-    screen.ontimer(lambda: None, 400)  # Non-blocking delay
+    time.sleep(0.4)
 
 # Finish
 turtle.done()
