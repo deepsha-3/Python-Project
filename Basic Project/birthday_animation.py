@@ -1,13 +1,12 @@
 import turtle
-import time
 import random
-from playsound import playsound
 import threading
+from playsound import playsound
 
 # 🎵 Play music in background using threading
 def play_music():
     try:
-        playsound(r"C:\Users\Deepsha\Music\YourBirthdaySong.mp3")  # Replace with your actual file path
+        playsound(r"C:\Users\Deepsha\Music\YourBirthdaySong.mp3")  # ✅ Make sure this path is correct
     except Exception as e:
         print("Music error:", e)
 
@@ -18,6 +17,7 @@ threading.Thread(target=play_music, daemon=True).start()
 screen = turtle.Screen()
 screen.bgcolor("black")
 screen.title("Happy Birthday Animation")
+screen.tracer(0)  # Turn off auto updates for smoother animation
 
 # Draw cake layers
 def draw_cake_layer(t, width, height, y_pos, color):
@@ -41,9 +41,9 @@ cake.hideturtle()
 cake.speed(0)
 
 # Draw 3 colorful layers 
-draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer of cake 
-draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")  # Middle layer of cake
-draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer of cake
+draw_cake_layer(cake, 220, 50, -160, "#f7c6c6")  # Bottom layer
+draw_cake_layer(cake, 180, 45, -100, "#f4a4a4")  # Middle layer
+draw_cake_layer(cake, 140, 40, -50, "#f08080")   # Top layer
 
 # Makes candles
 candle = turtle.Turtle()
@@ -72,6 +72,7 @@ flame.hideturtle()
 flame.speed(0)
 
 def draw_flames():
+    flame.clear()
     for x in candle_positions:
         flame.penup()
         flame.goto(x + candle_width // 2, 35)
@@ -79,14 +80,15 @@ def draw_flames():
         flame.begin_fill()
         flame.circle(7)
         flame.end_fill()
+    screen.update()
 
+# Animate flames flickering
 for _ in range(10):
     draw_flames()
-    time.sleep(0.2)
-    flame.clear()
+    screen.ontimer(lambda: None, 200)  # Non-blocking delay
 
 # Blow out candles
-time.sleep(1)
+flame.clear()
 for x in candle_positions:
     flame.penup()
     flame.goto(x + candle_width // 2, 35)
@@ -94,23 +96,25 @@ for x in candle_positions:
     flame.begin_fill()
     flame.circle(7)
     flame.end_fill()
+screen.update()
 
 # Birthday message
 message = turtle.Turtle()
 message.hideturtle()
 message.speed(0)
 message.penup()
-message.goto(-120, 100)  # Adjusted position to appear above cake
+message.goto(-120, 100)
 message.color("yellow")
 message.write("Happy Birthday Deepsha!", align="left", font=("Arial", 22, "bold"))
-time.sleep(1)
+screen.update()
 
 # Bounce Animation
 for bounce in range(6):
     message.clear()
     message.goto(-120, 100 + bounce * 10)
     message.write("Happy Birthday Deepsha!", align="left", font=("Arial", 22, "bold"))
-    time.sleep(0.4)
+    screen.update()
+    screen.ontimer(lambda: None, 400)  # Non-blocking delay
 
 # Finish
 turtle.done()
