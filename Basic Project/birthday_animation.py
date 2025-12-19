@@ -7,7 +7,7 @@ from playsound import playsound
 # 🎵 Play music in background using threading
 def play_music():
     try:
-        playsound(r"C:\Users\Deepsha\Music\YourBirthdaySong.mp3")  # ✅ Make sure this path is correct
+        playsound(r"C:\Users\Deepsha\Music\YourBirthdaySong.mp3")  
     except Exception as e:
         print("Music error:", e)
 
