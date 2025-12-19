@@ -114,7 +114,7 @@ def blow_out_flames():
 
 blow_out_flames()
 
-# Birthday message
+# Birthday Message
 message = turtle.Turtle()
 message.hideturtle()
 message.speed(0)
