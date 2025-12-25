@@ -9,3 +9,7 @@ for w in word:
         frequency[w] += 1
     else:
         frequency[w] = 1
+
+print("Word Frequency:")
+for w, freq in frequency.items():
+  
