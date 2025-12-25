@@ -4,3 +4,8 @@ sentence = input("Enter a sentence:")
 
 word = sentence.split()
 frequency = {}
+for w in word:
+    if w in frequency:
+        frequency[w] += 1
+    else:
+        frequency[w] = 1
