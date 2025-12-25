@@ -3,3 +3,4 @@
 sentence = input("Enter a sentence:")
 
 word = sentence.split()
+frequency = {}
