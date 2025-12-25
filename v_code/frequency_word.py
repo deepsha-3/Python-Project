@@ -1,1 +1,1 @@
-# Write a Python program to input a sentence 
+# Write a Python program to input a sentence and display the frequency of each word. 
