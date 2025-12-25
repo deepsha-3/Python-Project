@@ -12,4 +12,4 @@ for w in word:
 
 print("Word Frequency:")
 for w, freq in frequency.items():
-  
+    print(f"{w}: {freq}")
