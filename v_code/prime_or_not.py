@@ -13,3 +13,6 @@ num = int(input("Enter a number:"))
 
 if prime(num):
     print("The given number is prime number.")
+
+else: 
+    print("The given number is not a prime number.")
