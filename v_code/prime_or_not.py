@@ -8,4 +8,5 @@ def prime(num):
             if num % i == 0:
                 return False
     return True
-
+ 
+num = int(input("Enter a number:"))
