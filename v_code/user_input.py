@@ -2,3 +2,5 @@
 
 name = input("Eter your name:")
 age = int(input("Enter your age:"))
+
+print(f"")
